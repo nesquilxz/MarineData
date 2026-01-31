@@ -4,8 +4,7 @@ df = pd.read_csv("bounties.csv")
 
 df["bounty"] = pd.to_numeric(df["bounty"], errors="coerce") # como csv não tem tipo, transformamos em numeric. se não for número, será substituído como NaN
 
-bounty_por_tripulacao = (
-    df.groupby("tripulacao")["bounty"].sum().reset_index().sort_values(by="bounty", ascending=False))
+bounty_por_tripulacao = (df.groupby("tripulacao")["bounty"].sum().reset_index().sort_values(by="bounty", ascending=False))
 
 bounty_medio = df["bounty"].mean()
 
