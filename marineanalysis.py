@@ -12,6 +12,16 @@ capitaes_perigosos = (df.groupby("capitao")["bounty"].sum().reset_index().sort_v
 
 top_piratas = (df.sort_values(by="bounty", ascending=False).head(3)[["pirata", "bounty"]])
 
+perigo_por_ilha = (df.groupby("ilha")["bounty"].sum().reset_index().sort_values(by="bounty", ascending=False))
+
+ilha_mais_perigosa = perigo_por_ilha.iloc[0]
+
+print("Foco de perigo por ilha:")
+print(perigo_por_ilha, "\n")
+
+print("Ilha com maior foco de perigo:")
+print(perigo_por_ilha.head(1), "\n")
+
 print("Total de bounty por tripulação:")
 print(bounty_por_tripulacao, "\n")
 
@@ -22,3 +32,4 @@ print(capitaes_perigosos, "\n")
 
 print("Top 3 piratas com maior bounty:")
 print(top_piratas)
+
