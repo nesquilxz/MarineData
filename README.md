@@ -163,4 +163,4 @@ Adição de novas ilhas ou períodos de análise
 
 ---
 
-Este repositório prioriza clareza, organização e mentalidade analítica, refletindo o que é esperado no ambiente profissional (No caso, num ambiente da marinha do One Piece! 👒).
+Este repositório prioriza clareza, organização e mentalidade analítica, refletindo o que é esperado no ambiente profissional (No caso, num ambiente da marinha do anime One Piece! 👒).
