@@ -129,7 +129,7 @@ O foco não está apenas no código, mas na interpretação dos dados.
 
 ---
 
-Tecnologias Utilizadas
+# Tecnologias Utilizadas
 
 Python e Pandas
 
