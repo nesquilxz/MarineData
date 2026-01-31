@@ -1,4 +1,4 @@
-# ⚓️ MarineData ⚓️
+# ⚓️🌊 MarineData ⚓️🌊
 
 
 Neste projeto, assumimos o papel de Analista de Dados da Marinha, responsável por monitorar atividades de piratas a partir de registros armazenados em um arquivo CSV.
