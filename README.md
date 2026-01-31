@@ -10,7 +10,7 @@ Os dados analisados contêm informações sobre piratas, suas tripulações, cap
 
 ---
 
-Objetivos da Análise
+# Objetivos da Análise
 
 A partir do conjunto de dados, o gestor (Comandante da marinha!) solicitou as seguintes análises:
 
@@ -28,7 +28,7 @@ Essas solicitações são típicas do dia a dia de um analista de dados em empre
 
 ---
 
-O que é um KPI?
+# O que é um KPI?
 
 KPI (Key Performance Indicator) é um Indicador-Chave de Desempenho.
 
@@ -48,7 +48,7 @@ KPIs não são apenas números; eles precisam ser relevantes, mensuráveis e aci
 
 ---
 
-O que é agregação de dados?
+# O que é agregação de dados?
 
 Agregação é o processo de resumir dados detalhados em informações consolidadas.
 
@@ -71,7 +71,7 @@ Esse tipo de operação é extremamente comum em ambientes corporativos.
 
 ---
 
-Fonte de Dados
+# Fonte de Dados
 
 Os dados utilizados estão armazenados em um arquivo CSV (bounties.csv), simulando uma extração direta de um sistema operacional.
 
@@ -91,7 +91,7 @@ ilha: local do registro
 
 ---
 
-Principais Análises Realizadas
+# Principais Análises Realizadas
 
 1. Total de bounty por tripulação
 
@@ -136,7 +136,7 @@ Python e Pandas
 
 ---
 
-Objetivo Educacional
+# Objetivo Educacional
 
 Este projeto foi desenvolvido com foco em:
 
@@ -149,7 +149,7 @@ Reforçar conceitos fundamentais como KPIs, agregações e leitura de dados
 
 ---
 
-Próximos Passos Possíveis
+# Próximos Passos Possíveis
 
 Criação de gráficos para visualização dos KPIs (No momento, quero aprender PowerBI para visualização de dados)
 
