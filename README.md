@@ -1,4 +1,4 @@
-# MarineData
+# ⚓️ MarineData ⚓️
 
 
 Neste projeto, assumimos o papel de Analista de Dados da Marinha, responsável por monitorar atividades de piratas a partir de registros armazenados em um arquivo CSV.
@@ -131,10 +131,7 @@ O foco não está apenas no código, mas na interpretação dos dados.
 
 Tecnologias Utilizadas
 
-Python
-
-pandas
-
+Python e Pandas
 
 
 ---
@@ -166,4 +163,4 @@ Adição de novas ilhas ou períodos de análise
 
 ---
 
-Este repositório prioriza clareza, organização e mentalidade analítica, refletindo o que é esperado no ambiente profissional (No caso, num ambiente da marinha do One Piece!).
+Este repositório prioriza clareza, organização e mentalidade analítica, refletindo o que é esperado no ambiente profissional (No caso, num ambiente da marinha do One Piece! 👒).
