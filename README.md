@@ -23,8 +23,6 @@ Identificar quais capitães representam maior risco (maior soma de bounty)
 Gerar um resumo geral para relatório executivo
 
 
-Essas solicitações são típicas do dia a dia de um analista de dados em empresas orientadas por métricas.
-
 
 ---
 
@@ -43,7 +41,7 @@ Total de bounty por tripulação
 Ranking de capitães por risco
 
 
-KPIs não são apenas números; eles precisam ser relevantes, mensuráveis e acionáveis, ou seja, devem ajudar na tomada de decisão.
+KPIs não são apenas números; eles precisam ser relevantes e devem ajudar na tomada de decisão.
 
 
 ---
