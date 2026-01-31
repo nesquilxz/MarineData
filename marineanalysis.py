@@ -14,7 +14,7 @@ top_piratas = (df.sort_values(by="bounty", ascending=False).head(3)[["pirata", "
 
 perigo_por_ilha = (df.groupby("ilha")["bounty"].sum().reset_index().sort_values(by="bounty", ascending=False))
 
-ilha_mais_perigosa = perigo_por_ilha.iloc[0]
+ilha_mais_perigosa = perigo_por_ilha.iloc[0] #navegando no df usando iloc para acessar a primeira posição (que no caso, é a ilha mais perigosa para a marinha!)
 
 print("Foco de perigo por ilha:")
 print(perigo_por_ilha, "\n")
