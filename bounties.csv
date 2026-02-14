@@ -1,6 +1,6 @@
 pirata,tripulacao,capitao,bounty,ilha,status_historia,observacoes
 
-# CHAPÉUS DE PALHA
+
 Luffy,Chapéus de Palha,Luffy,3000000000,Elbaf,Vivo,Imperador (Yonkou)
 Zoro,Chapéus de Palha,Luffy,1111000000,Elbaf,Vivo,Espadachim principal - Caçador de Piratas
 Nami,Chapéus de Palha,Luffy,366000000,Elbaf,Viva,Navegadora - Gato Ladrão
@@ -12,35 +12,35 @@ Franky,Chapéus de Palha,Luffy,394000000,Elbaf,Vivo,Carpinteiro - Cyborg
 Brook,Chapéus de Palha,Luffy,383000000,Elbaf,Vivo,Músico - Alma Rei
 Jinbe,Chapéus de Palha,Luffy,1100000000,Elbaf,Vivo,Timoneiro - Cavaleiro do Mar
 
-# HEART PIRATES
+
 Law,Heart Pirates,Law,3000000000,Ilha dos Naufrágios,Vivo,Ex-Shichibukai - aliado dos Chapéus de Palha
 Bepo,Heart Pirates,Law,500000,Ilha dos Naufrágios,Vivo,Navegador/piloto - Urso polar mink
 Shachi,Heart Pirates,Law,10000000,Ilha dos Naufrágios,Vivo,Membro da tripulação
 Penguin,Heart Pirates,Law,10000000,Ilha dos Naufrágios,Vivo,Membro da tripulação
 
-# KID PIRATES
+
 Kid,Kid Pirates,Kid,3000000000,Arquipélago de Ferro,Desconhecido pós-Wano,Capitão - Generação Ruim
 Killer,Kid Pirates,Kid,200000000,Arquipélago de Ferro,Desconhecido pós-Wano,Combatente principal
 Heat,Kid Pirates,Kid,10000000,Arquipélago de Ferro,Desconhecido pós-Wano,Membro da tripulação
 Wire,Kid Pirates,Kid,10000000,Arquipélago de Ferro,Desconhecido pós-Wano,Membro da tripulação
 
-# WHITEBEARD PIRATES (remanescentes)
+
 Marco,Whitebeard Pirates,Marco,1374000000,Ilha Sphinx,Vivo,1ª Divisão - Fênix
 Vista,Whitebeard Pirates,Marco,550000000,Ilha Sphinx,Vivo,5ª Divisão - Espadachim
 
-# PIRATAS DO RUIVO
+
 Shanks,Piratas do Ruivo,Shanks,4048900000,Desconhecido,Vivo,Imperador (Yonkou) - maior recompensa atual
 Ben Beckman,Piratas do Ruivo,Shanks,0,Desconhecido,Vivo,Primeiro imediato - mais inteligente do Novo Mundo
 Lucky Roo,Piratas do Ruivo,Shanks,0,Desconhecido,Vivo,Atirador - sempre comendo
 Yasopp,Piratas do Ruivo,Shanks,0,Desconhecido,Vivo,Atirador de elite - pai de Usopp
 
-# CROSS GUILD
+
 Buggy,Cross Guild,Buggy,3190000000,Desconhecido,Vivo,Imperador (Yonkou) - impostor
 Mihawk,Cross Guild,,3590000000,Desconhecido,Vivo,Espadachim mais forte do mundo - Ex-Shichibukai
 Crocodile,Cross Guild,,1965000000,Desconhecido,Vivo,Ex-Shichibukai - co-fundador do Cross Guild
 Daz Bones,Cross Guild,,0,Desconhecido,Vivo,Mr. 1 - Homem-faca
 
-# PIRATAS DO BARBA NEGRA
+
 Teach,Piratas do Barba Negra,Teach,3996000000,Ilha Pirata,Vivo,Imperador (Yonkou) - 2 frutas
 Burgress,Piratas do Barba Negra,Teach,20000000,Ilha Pirata,Vivo,Campeão - 1º capitão
 Shiryu,Piratas do Barba Negra,Teach,0,Ilha Pirata,Vivo,Ex-carcereiro de Impel Down - invisível
@@ -48,32 +48,32 @@ Van Augur,Piratas do Barba Negra,Teach,64000000,Ilha Pirata,Vivo,Atirador - Vis�
 Lafitte,Piratas do Barba Negra,Teach,42200000,Ilha Pirata,Vivo,Navegador/Xerife
 Devon,Piratas do Barba Negra,Teach,0,Ilha Pirata,Viva,Peak - 6º capitã
 
-# PIRATAS DO BARBA BRANCA (falecidos)
+
 Barba Branca,Piratas do Barba Branca,Barba Branca,5046000000,Marineford,Falecido,Ex-Yonkou - Homem mais forte do mundo
 Ace,Piratas do Fogo,Ace,550000000,Marineford,Falecido,2ª Divisão dos Piratas do Barba Branca
 Barba Negra (antes),Piratas do Barba Branca,Barba Branca,0,Marineford,Vivo,Ex-membro - 2ª Divisão
 
-# PIRATAS DA BIG MOM
+
 Linlin,Piratas da Big Mom,Linlin,4388000000,Totto Land,Desconhecida pós-Wano,Ex-Yonkou - Big Mom
 Katakuri,Piratas da Big Mom,Linlin,1057000000,Totto Land,Vivo,Ministério da Farinha - Mochi
 Smoothie,Piratas da Big Mom,Linlin,932000000,Totto Land,Viva,Ministra do Suco
 Cracker,Piratas da Big Mom,Linlin,860000000,Totto Land,Vivo,Ministério da Biscuit
 Perospero,Piratas da Big Mom,Linlin,700000000,Totto Land,Vivo,Ministro dos Doces
 
-# PIRATAS DAS BESTAS (Kaido)
+
 Kaido,Piratas das Bestas,Kaido,4611000000,Wano,Preso/Falecido?,Ex-Yonkou - Criatura Mais Forte
 King,Piratas das Bestas,Kaido,1390000000,Wano,Preso?,Calamidade das Chamas - Lunaria
 Queen,Piratas das Bestas,Kaido,1320000000,Wano,Preso?,Calamidade das Pragas - Cientista
 Jack,Piratas das Bestas,Kaido,1000000000,Wano,Preso?,Calamidade das Secas - homem-peixe
 Yamato,Piratas das Bestas,Kaido,0,Wano,Viva,Filha de Kaido
 
-# REVOLUCIONÁRIOS (sem tripulação - organização)
+
 Dragon,Exército Revolucionário,,0,Ilha Kamabakka,Vivo,Líder - Pai de Luffy
 Sabot,Exército Revolucionário,,0,Ilha Kamabakka,Vivo,Chefe de Estado-Maior - Irmão de Luffy
 Ivankov,Exército Revolucionário,,0,Ilha Momoiro,Vivo,Comandante - Reino Kamabakka
 Kuma,Exército Revolucionário,,0,Mariejois,Desconhecido,Ex-Shichibukai - Ciborgue
 
-# MARINHA (sem tripulação)
+
 Akainu,Marinha,,0,Marineford,Vivo,Frota Almirante - Punição Absoluta
 Kizaru,Marinha,,0,Marineford,Vivo,Almirante - Luz
 Aokiji,Marinha,,0,Piratas do Barba Negra,Vivo,Ex-Almirante - agora com Teach
@@ -83,7 +83,7 @@ Garp,Marinha,,0,Marineford,Vivo,Vice-Almirante - Herói da Marinha
 Sengoku,Marinha,,0,Marineford,Vivo,Ex-Frota Almirante - Buda
 Coby,Marinha,,0,Marineford,Vivo,Capitão - Herói da Marinha
 
-# OUTROS PERSONAGENS IMPORTANTES (sem tripulação)
+
 Vivi,Reino de Alabasta,,0,Alabasta,Viva,Princesa de Alabasta
 Shirahoshi,Reino de Ryugu,,0,Ilha dos Homens-Peixe,Viva,Princesa Sereia - Poseidon
 Hancock,Amazon Lily,,0,Amazon Lily,Viva,Imperadora - Shichibukai
