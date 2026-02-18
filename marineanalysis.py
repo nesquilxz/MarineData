@@ -98,7 +98,9 @@ Mortos = df[filtroMorto].sort_values(by="bounty", ascending=False, ignore_index=
 #Bõnus: num gráfico, onde estes piratas "mortos" se encontram junto dos piratas mais perigosos que ainda estão vivos (em relação ao bounty)? //obs: var Mortos são os TOP mortos em relação ao bounty, o mesmo serve para a var Vivos 
 #vou trabalhar com concat e depois sort_values
 
-Vivos = df[df["status_historia"] == "Vivo"].sort_values(by="bounty", ascending=False, ignore_index=True)
+filtroVivo = df["status_historia"] == "Vivo"
+Vivos = df[filtroVivo].sort_values(by="bounty", ascending=False, ignore_index=True)
+
 PerigososVivosSupostosMortos = pd.concat([Vivos, Mortos]).sort_values(by="bounty", ascending=False, ignore_index=True)
 PerigososVivosSupostosMortos.head(10)
 
