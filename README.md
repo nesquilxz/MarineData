@@ -157,7 +157,10 @@ Construção de um dashboard
 
 Adição de novas ilhas ou períodos de análise
 
+---
 
+# v2 — Web Interface
+O projeto evoluiu de uma análise local em Python (marineanalysis.py) para uma plataforma web interativa em React. Os dados continuam vindo do mesmo bounties.csv original — agora importado diretamente no frontend via Vite (?raw) e parseado em runtime, eliminando a necessidade de um pirates.json intermediário.
 
 ---
 
