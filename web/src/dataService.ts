@@ -1,4 +1,4 @@
-import rawCsv from '../bounties.csv?raw';
+import rawCsv from '../../bounties.csv?raw';
 
 export interface PirateRecord {
   pirata: string;
