@@ -1,5 +1,4 @@
-import piratesRaw from './pirates.json';
-// Dados vao vir "cru", ai tenho que deixar num padrao (PirateRecord)
+import rawCsv from '../bounties.csv?raw';
 
 export interface PirateRecord {
   pirata: string;
@@ -9,7 +8,6 @@ export interface PirateRecord {
   ilha: string;
   status_historia: string;
   observacoes: string;
-  imgIndex: number;
 }
 
 const PIRATE_IMAGES: Record<string, string> = {
@@ -44,12 +42,12 @@ const PIRATE_IMAGES: Record<string, string> = {
   "King": "https://i.pinimg.com/736x/1b/a5/a5/1ba5a513d42b3e97e938376eec512643.jpg",
   "Queen": "https://i.pinimg.com/736x/a9/db/b6/a9dbb63e09b9dd6fbdd14fd19c1136d6.jpg",
   "Jack": "https://i.pinimg.com/736x/3c/ec/eb/3ceceb833857b4f42372de734b82100b.jpg",
-  "Lafite": "https://i.pinimg.com/736x/a4/ac/3c/a4ac3cc38e3301be8c35261edb8182a6.jpg",
-  "Catarina Devon": "https://i.pinimg.com/736x/c9/21/12/c921127bd5ebd783b9bb0958c772388a.jpg",
+  "Lafitte": "https://i.pinimg.com/736x/a4/ac/3c/a4ac3cc38e3301be8c35261edb8182a6.jpg",
+  "Devon": "https://i.pinimg.com/736x/c9/21/12/c921127bd5ebd783b9bb0958c772388a.jpg",
   "Katakuri": "https://i.pinimg.com/1200x/7e/58/a4/7e58a4e4a4379fc69e7372b58eaa095f.jpg",
   "Smoothie": "https://i.pinimg.com/736x/4c/4f/12/4c4f12b8a19ac55d78362561b4eaeefd.jpg",
   "Perospero": "https://i.pinimg.com/736x/9b/ad/cf/9badcf814d4de5a119dcf6b437fc2f5c.jpg",
-  "Jesus Burgess": "https://i.pinimg.com/736x/82/e6/e3/82e6e3b12d1f1d7d5ea6204afd18ae55.jpg",
+  "Burgess": "https://i.pinimg.com/736x/82/e6/e3/82e6e3b12d1f1d7d5ea6204afd18ae55.jpg",
   "Heat": "https://i.pinimg.com/736x/9c/cd/35/9ccd35f86bbfed443fa4ff213cab50b9.jpg",
   "Vista": "https://i.pinimg.com/736x/6e/4f/3a/6e4f3a8fe91660fbb7b971d2a7a896c4.jpg",
   "Crocodile": "https://i.pinimg.com/736x/9d/81/f7/9d81f703ca4524c9f13418a2398e6278.jpg",
@@ -57,23 +55,48 @@ const PIRATE_IMAGES: Record<string, string> = {
   "Killer": "https://i.pinimg.com/736x/4b/bf/18/4bbf18881b4bf245585e4239f897ef15.jpg",
   "Ben Beckman": "https://i.pinimg.com/736x/47/c3/3e/47c33e90080bf91850d90917f350f74b.jpg",
   "Van Augur": "https://i.pinimg.com/736x/e9/f7/73/e9f77374684215fb29f4bbc7f76b2554.jpg",
-  "Monkey D. Dragon": "https://i.pinimg.com/736x/c1/67/54/c1675431de988315c062ef71e1292107.jpg",
-  "Emporio Ivankov": "https://i.pinimg.com/736x/8b/61/af/8b61af634b3f9fc7af39fc640b778565.jpg",
-  "Bartholomew Kuma": "https://i.pinimg.com/736x/3c/86/bc/3c86bcf9c824e95ac7e57067100c12a1.jpg",
+  "Dragon": "https://i.pinimg.com/736x/c1/67/54/c1675431de988315c062ef71e1292107.jpg",
+  "Ivankov": "https://i.pinimg.com/736x/8b/61/af/8b61af634b3f9fc7af39fc640b778565.jpg",
+  "Kuma": "https://i.pinimg.com/736x/3c/86/bc/3c86bcf9c824e95ac7e57067100c12a1.jpg",
   "Shirahoshi": "https://i.pinimg.com/736x/85/ca/91/85ca91d8e87ad6da92dbe33d183f3e5b.jpg",
-  "Kozuki Oden": "https://i.pinimg.com/736x/8d/95/e1/8d95e17b2d584f99c28d68f5131728a1.jpg",
+  "Oden": "https://i.pinimg.com/736x/8d/95/e1/8d95e17b2d584f99c28d68f5131728a1.jpg",
   "Yamato": "https://i.pinimg.com/736x/df/af/6a/dfaf6aa90c4836a70c7708b03ad5cc16.jpg",
-  "Charlotte Cracker": "https://i.pinimg.com/1200x/c2/d6/02/c2d602ab26711f374552d91b57afbeef.jpg",
+  "Cracker": "https://i.pinimg.com/1200x/c2/d6/02/c2d602ab26711f374552d91b57afbeef.jpg",
   "Donquixote Doflamingo": "https://i.pinimg.com/736x/c2/93/82/c29382cd7e2ef0dd479318d56c0e60f3.jpg",
-  "Lucky Roo":"https://i.pinimg.com/736x/7e/c1/c4/7ec1c440eee20d1c46ebf5c46b71a6e5.jpg",
-  "Jewelry Bonney": "https://i.pinimg.com/736x/29/20/e9/2920e93f2e7c711c845c3bebd6ad74fa.jpg"
+  "Lucky Roo": "https://i.pinimg.com/736x/7e/c1/c4/7ec1c440eee20d1c46ebf5c46b71a6e5.jpg",
+  "Jewelry Bonney": "https://i.pinimg.com/736x/29/20/e9/2920e93f2e7c711c845c3bebd6ad74fa.jpg",
 };
 
-export const getPirateImage = (pirateName: string, imgIndex: number): string | null => {
+export const getPirateImage = (pirateName: string): string | null => {
   return PIRATE_IMAGES[pirateName] || null;
 };
 
-const pirates: PirateRecord[] = piratesRaw as PirateRecord[];
+// Parse CSV into PirateRecord[]
+function parseCsv(csv: string): PirateRecord[] {
+  const lines = csv.split('\n').filter(line => line.trim() !== '');
+  const [headerLine, ...dataLines] = lines;
+  const headers = headerLine.split(',').map(h => h.trim());
+
+  return dataLines.map(line => {
+    // Split carefully: bounty can be a number, no quotes expected
+    const cols = line.split(',');
+    const row: Record<string, string> = {};
+    headers.forEach((header, i) => {
+      row[header] = (cols[i] ?? '').trim();
+    });
+    return {
+      pirata: row['pirata'] ?? '',
+      tripulacao: row['tripulacao'] ?? '',
+      capitao: row['capitao'] ?? '',
+      bounty: Number(row['bounty']) || 0,
+      ilha: row['ilha'] ?? '',
+      status_historia: row['status_historia'] ?? '',
+      observacoes: row['observacoes'] ?? '',
+    };
+  });
+}
+
+const pirates: PirateRecord[] = parseCsv(rawCsv);
 
 // 1 Total Bounty per Crew
 export const getBountyByCrew = () => {
@@ -132,12 +155,12 @@ export const getYonko = () => {
     .slice(0, 4);
 };
 
-export const getTop5Emperors = getYonko; // Alias for backward compatibility during transition if needed, but I'll update App.tsx anyway.
+export const getTop5Emperors = getYonko;
 
 // 7 Former Warlords (Ex-Shichibukai)
 export const getExShichibukai = () => {
   return pirates
-    .filter(p => p.observacoes.includes("Ex-Shichibukai"))
+    .filter(p => p.observacoes.includes("Ex-Shichibukai") || p.observacoes.includes("Shichibukai"))
     .sort((a, b) => b.bounty - a.bounty);
 };
 
@@ -145,10 +168,8 @@ export const getExShichibukai = () => {
 export const getExShichibukaiStats = () => {
   const group = getExShichibukai();
   if (group.length === 0) return { avg: 0, variance: 0 };
-  
   const avg = group.reduce((acc, curr) => acc + curr.bounty, 0) / group.length;
   const variance = group.reduce((acc, curr) => acc + Math.pow(curr.bounty - avg, 2), 0) / group.length;
-  
   return { avg, variance };
 };
 
