@@ -1,6 +1,8 @@
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
+
+ developed by Pedro Henriques
  */
 
 import React, { useMemo, useState, useRef, useEffect } from "react";
