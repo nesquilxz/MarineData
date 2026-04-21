@@ -103,10 +103,7 @@ const BountyPoster = ({
   size?: "sm" | "md" | "lg";
 }) => {
   const isLarge = size === "lg";
-  const mappedImage = DataService.getPirateImage(
-    pirate.pirata,
-    pirate.imgIndex,
-  );
+  const mappedImage = DataService.getPirateImage(pirate.pirata);
 
   return (
     <div
@@ -167,7 +164,7 @@ const WantedPosterSkeleton = ({
   pirate?: PirateRecord;
 }) => {
   const mappedImage = pirate
-    ? DataService.getPirateImage(pirate.pirata, pirate.imgIndex)
+    ? DataService.getPirateImage(pirate.pirata)
     : null;
 
   return (
@@ -256,7 +253,7 @@ const IntelligenceDashboard = () => {
   const allPirates = useMemo(() => DataService.getAllPirates(), []);
   const piratesWithImages = useMemo(() => {
     return allPirates.filter(
-      (p) => !!DataService.getPirateImage(p.pirata, p.imgIndex),
+      (p) => !!DataService.getPirateImage(p.pirata),
     );
   }, [allPirates]);
 
@@ -474,7 +471,7 @@ const IntelligenceDashboard = () => {
               />
               <div className="grid grid-cols-1 gap-4">
                 {captainStats.slice(0, 6).map((cap, i) => {
-                  const mappedImg = DataService.getPirateImage(cap.capitao, i);
+                  const mappedImg = DataService.getPirateImage(cap.capitao);
                   const isExpanded = expandedCommander === cap.capitao;
                   const crew = allPirates
                     .filter((p) => p.capitao === cap.capitao)
@@ -987,7 +984,7 @@ const OperationsCenter = () => {
   const allPirates = useMemo(() => DataService.getAllPirates(), []);
   const piratesWithImages = useMemo(() => {
     return allPirates.filter(
-      (p) => !!DataService.getPirateImage(p.pirata, p.imgIndex),
+      (p) => !!DataService.getPirateImage(p.pirata),
     );
   }, [allPirates]);
 
@@ -1296,10 +1293,7 @@ const OperationsCenter = () => {
               {currentModule.id === "top-3" && (
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                   {(currentModule.data as PirateRecord[]).map((p) => {
-                    const mappedImg = DataService.getPirateImage(
-                      p.pirata,
-                      p.imgIndex,
-                    );
+                    const mappedImg = DataService.getPirateImage(p.pirata);
                     return (
                       <div
                         key={p.pirata}
@@ -1428,10 +1422,7 @@ const OperationsCenter = () => {
               {currentModule.id === "emperors" && (
                 <div className="space-y-4">
                   {(currentModule.data as PirateRecord[]).map((p, i) => {
-                    const mappedImg = DataService.getPirateImage(
-                      p.pirata,
-                      p.imgIndex,
-                    );
+                    const mappedImg = DataService.getPirateImage(p.pirata);
                     return (
                       <div
                         key={i}
@@ -1762,7 +1753,7 @@ export default function App() {
   const allPirates = useMemo(() => DataService.getAllPirates(), []);
   const piratesWithImages = useMemo(() => {
     return allPirates.filter(
-      (p) => !!DataService.getPirateImage(p.pirata, p.imgIndex),
+      (p) => !!DataService.getPirateImage(p.pirata),
     );
   }, [allPirates]);
 
