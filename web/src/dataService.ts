@@ -65,6 +65,7 @@ const PIRATE_IMAGES: Record<string, string> = {
   "Donquixote Doflamingo": "https://i.pinimg.com/736x/c2/93/82/c29382cd7e2ef0dd479318d56c0e60f3.jpg",
   "Lucky Roo": "https://i.pinimg.com/736x/7e/c1/c4/7ec1c440eee20d1c46ebf5c46b71a6e5.jpg",
   "Jewelry Bonney": "https://i.pinimg.com/736x/29/20/e9/2920e93f2e7c711c845c3bebd6ad74fa.jpg",
+  "Burgress": "https://i.pinimg.com/736x/a9/3e/da/a93edaa3e1c195422393b6b171225c41.jpg",
 };
 
 export const getPirateImage = (pirateName: string): string | null => {
