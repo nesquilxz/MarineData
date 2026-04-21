@@ -435,7 +435,7 @@ const IntelligenceDashboard = () => {
                   preload="auto"
                   className="absolute inset-0 w-full h-full object-cover z-0"
                 >
-                  <source src="/textures/untitled.mp4" type="video/mp4" /> 
+                  <source src="/videos/card1.mp4" type="video/mp4" /> 
                 </video>
                 <div className="absolute inset-0 bg-[#0039B9]/20 mix-blend-overlay z-[1]" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0039B9]/60 via-transparent to-transparent z-[2]" />
@@ -454,7 +454,7 @@ const IntelligenceDashboard = () => {
                   preload="auto"
                   className="absolute inset-0 w-full h-full object-cover z-0"
                 >
-                 <source src="/textures/untitled(1).mp4" type="video/mp4" />
+                 <source src="/videos/card2.mp4" type="video/mp4" />
                 </video>
                 <div className="absolute inset-0 bg-[#0039B9]/20 mix-blend-overlay z-[1]" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0039B9]/60 via-transparent to-transparent z-[2]" />
@@ -1118,7 +1118,7 @@ const CTASection = () => {
             preload="auto" 
             className="absolute inset-0 w-full h-full object-cover z-0 opacity-30 mix-blend-overlay pointer-events-none"
           >
-            <source src="/textures/video.mp4" type="video/mp4" />
+            <source src="/videos/cto.mp4" type="video/mp4" />
           </video>
           <div className="absolute inset-0 bg-gradient-to-t from-[#0039B9] via-transparent to-transparent z-[1]" />
 
@@ -1234,7 +1234,7 @@ export default function App() {
       
       <main className="relative flex flex-col items-center justify-start px-6 pt-52 text-center min-h-[90vh] overflow-hidden">
         <video autoPlay muted loop playsInline preload="auto" className="absolute inset-0 w-full h-full object-cover z-0 opacity-40 mix-blend-multiply" style={{ pointerEvents: 'none' }}>
-          <source src="/textures/video(1).mp4" type="video/mp4" />
+          <source src="/videos/head.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 z-10 bg-gradient-to-b from-transparent via-white/5 to-white" />
         
