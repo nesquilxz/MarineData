@@ -435,7 +435,7 @@ const IntelligenceDashboard = () => {
                   preload="auto"
                   className="absolute inset-0 w-full h-full object-cover z-0"
                 >
-                  <source src="https://dnznrvs05pmza.cloudfront.net/kling-3-0-standard/875335622326620209/untitled.mp4?_jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiYThkMjJjNTE2ZDFlZjBkZiIsImJ1Y2tldCI6InJ1bndheS10YXNrLWFydGlmYWN0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc3Njg4Mzc5M30.Ilwpw1Gibrtjxn8SODt4U4fXwIpYi1KQ1Jwg14Nb5vk" type="video/mp4" /> 
+                  <source src="/textures/untitled.mp4" type="video/mp4" /> 
                 </video>
                 <div className="absolute inset-0 bg-[#0039B9]/20 mix-blend-overlay z-[1]" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0039B9]/60 via-transparent to-transparent z-[2]" />
@@ -454,7 +454,7 @@ const IntelligenceDashboard = () => {
                   preload="auto"
                   className="absolute inset-0 w-full h-full object-cover z-0"
                 >
-                 <source src="https://dnznrvs05pmza.cloudfront.net/kling-3-0-standard/875334898361049187/untitled.mp4?_jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiZmM5MTY5ZDcwNGM3NzVhNiIsImJ1Y2tldCI6InJ1bndheS10YXNrLWFydGlmYWN0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc3Njg4OTA0N30.3a-aji_aN0IgIgsw_rMoo4IjsaZW7Bx4Jnkr08U_MeY" type="video/mp4" />
+                 <source src="/textures/untitled(1).mp4" type="video/mp4" />
                 </video>
                 <div className="absolute inset-0 bg-[#0039B9]/20 mix-blend-overlay z-[1]" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0039B9]/60 via-transparent to-transparent z-[2]" />
@@ -1118,7 +1118,7 @@ const CTASection = () => {
             preload="auto" 
             className="absolute inset-0 w-full h-full object-cover z-0 opacity-30 mix-blend-overlay pointer-events-none"
           >
-            <source src="https://dnznrvs05pmza.cloudfront.net/kling-3-0-standard/874903085968785414/untitled.mp4?_jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiMTllOTBmYzhkMzgxYjlkMSIsImJ1Y2tldCI6InJ1bndheS10YXNrLWFydGlmYWN0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc3Njc1NTUyOH0.AIhvKeMfwHuL3D-lE4c3nlBGUB7U_m8pqE9VrMHaaQs" type="video/mp4" />
+            <source src="/textures/video.mp4" type="video/mp4" />
           </video>
           <div className="absolute inset-0 bg-gradient-to-t from-[#0039B9] via-transparent to-transparent z-[1]" />
 
@@ -1234,7 +1234,7 @@ export default function App() {
       
       <main className="relative flex flex-col items-center justify-start px-6 pt-52 text-center min-h-[90vh] overflow-hidden">
         <video autoPlay muted loop playsInline preload="auto" className="absolute inset-0 w-full h-full object-cover z-0 opacity-40 mix-blend-multiply" style={{ pointerEvents: 'none' }}>
-          <source src="https://dnznrvs05pmza.cloudfront.net/kling-3-0-standard/874851093401567283/untitled.mp4?_jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiZTY5YTlmNzNjYjE2MTVmNCIsImJ1Y2tldCI6InJ1bndheS10YXNrLWFydGlmYWN0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc3NjcxNzA0M30.GvTZPpEptEuItlli0nXWK3EJQrTR4kEH-4juDVPTh-8" type="video/mp4" />
+          <source src="/textures/video(1).mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 z-10 bg-gradient-to-b from-transparent via-white/5 to-white" />
         
