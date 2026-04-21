@@ -932,7 +932,7 @@ const OperationsCenter = () => {
                       width={800}
                       height={400}
                       backgroundColor="rgba(0,0,0,0)"
-                      globeImageUrl="/texture/map.jpg"
+                      globeImageUrl="/textures/map.jpg"
                       pointsData={islandsData}
                       pointLat="lat"
                       pointLng="lng"
