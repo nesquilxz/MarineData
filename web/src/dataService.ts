@@ -1,3 +1,4 @@
+// pegando o mesmo csv utilizado anteriormente e passando pra tudo string
 import rawCsv from "../../bounties.csv?raw";
 
 export interface PirateRecord {
