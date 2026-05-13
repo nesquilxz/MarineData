@@ -7,7 +7,7 @@ O objetivo é transformar dados brutos em informações estratégicas que auxili
 
 Os dados analisados contêm informações sobre piratas, suas tripulações, capitães, valores de bounty (recompensa) e ilhas onde foram registrados.
 
-Site: https://marinedatawg.netlify.app/
+Website: https://marinedatawg.netlify.app/
 
 ---
 
